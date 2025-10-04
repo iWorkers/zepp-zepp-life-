@@ -125,13 +125,14 @@ def build_alipay_url(info_str):
 
 if __name__ == "__main__":
 
-    apptoken = "ZQVBQDZOQmJaR0YyajYmWnJoBAgAAAAAAYT1aZzhLRDkyWHlHWW0tSTJrSFdpQ3dIQUFBQVptYWo3cVUmcj0xMiZ0PWh1YW1pJnRpPWhoaGgwMDAwQHFxLmNvbSZoPTE3NTk1NTM1NDYwODQmaT04NjQwMDAmdXNlcm5hbWU9aGhoaDAwMDCsJfJIDwX_Qo3qBUaaRY_X"
-    #apptoken = "ZQVBQFJyQktGHlp6QkpbRl5LRl5qek4uXAQABAAAAAC_pv2RE9jn82Rt6Jxe7kbB65__70hP1YGvIOO0KxMG-SBUq1kCEE2Ecm-a36nfkR9inM3MTMteVPnwWgyouG72gzp4iDEp0pVlaSrp1nEXlolepQe8oEIl1wTZnu4v6m_2VCibx6NFAqwIoQaDiKHM-cJCQ-9-o4P6vdNh7O1IcwPs7QhX2YtVX5b2ppG-m2A"
-    userid = "1196601470"
+    apptoken = "app token"
+   
+    userid = "userid"
     success = test_apptoken(apptoken)
     print(f"token: {'有效' if success else '无效'}")
     if success:
-        result1=test_band(apptoken,userid)
-        result=test_band_v2(apptoken,userid)
+        result1=test_band(apptoken,userid)    #微信绑定二维码链接
+        result=test_band_v2(apptoken,userid)   #支付宝绑定scheme
         print(result1 ,result)
     
+
