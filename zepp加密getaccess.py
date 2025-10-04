@@ -81,6 +81,7 @@ def getAccess_with_pycurl(username, password):
     raise Exception(f"登录token接口请求失败，HTTP {status}\nHeaders:\n{headers}")
 
 if __name__ == "__main__":
-    token, typ = getAccess_with_pycurl("hhhh0000@qq.com", "1126560716hU")
+    token, typ = getAccess_with_pycurl("账号@qq.com", "密码")
     print("Token:", token)
     print("Type:", typ)
+
